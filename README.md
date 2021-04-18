@@ -9,15 +9,15 @@ huajhc/huajhc is a ✨ special ✨ repository because its `README.md` (this file
 You can click the Preview link to take a look at your changes.
 --->
 $from_id = $message->from->id; $name = $message->from->first_name; $text = $message->text;
-$mid = $message->message_id; $name2 = $update->callback_query->from->first_name; $message_id2 = $update->callback_query->message->message_id; $chat_id2 = $update->callback_query->message->chat->id;
+$mid = $message->message_id; $name2 = $update->callback_query->from->first_name; $message_id2 = $update->callback_query->message->message_id; $chat_id2 = $update->callback_query->message->chat->1768045259;
 $from_id2 = $update->callback_query->from->id; $message_id = $update->callback_query->message->message_id; $data = $update->callback_query->data;
 $username = $message->from->username;
 mkdir("carlos");
-$Dev = array("1710485251", "1710485251" ); //ايديك
-$car = 1710485251; //ايديك
+$Dev = array("1710485251", "1768045259" ); //1768045259
+$car = 1768045259; //1768045259
 $tiger = file_get_contents("carlos/tiger.txt");
 $tigerannel = file_get_contents("carlos/tigerannel.txt");
-if($text == "تفعيل" or $text == "حظر" or $text == "ايدي" or $text == "كتم" or $text == "تقيد" or $text == "الاوامر" or $text == "الاعدادات" or $text == "رتبتي" or $text == "كشف" or $text == "الرتبه" or $text == "رتبته" or $text == "اضف رد" or $text == "حذف رد" or $text == "تاك" or $text == "حذف امر" or $text == "اضف امر" or $text == "تاك للكل" or $text == "/start"){
+if($text == "تفعيل" or $text == "حظر" or $text == "1768045259" or $text == "كتم" or $text == "تقيد" or $text == "الاوامر" or $text == "الاعدادات" or $text == "رتبتي" or $text == "كشف" or $text == "الرتبه" or $text == "رتبته" or $text == "اضف رد" or $text == "حذف رد" or $text == "تاك" or $text == "حذف امر" or $text == "اضف امر" or $text == "تاك للكل" or $text == "/start"){
 if($tigerannel == "on"){
 $join = file_get_contents("https://api.telegram.org/bot".API_KEY."/getChatMember?chat_id=@$tiger&user_id=".$from_id);
 if($message && (strpos($join,'"status":"left"') or strpos($join,'"Bad Request: USER_ID_INVALID"') or strpos($join,'"status":"kicked"'))!== false){
@@ -38,7 +38,7 @@ bot('sendMessage',[
 🎖┇معرف العضو ~⪼ @$username
 🎖┇ايدي العضو ~⪼ $from_id
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-🎖┇قناة الاشتراك الاجباري ~⪼ @$tiger",
+🎖┇قناة الاشتراك الاجباري ~⪼ @$JJJJS1",
       ]);
       die('اا');
   }
